@@ -22,7 +22,12 @@
         <version>1.5.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
+    
+    <modules>
+        <module>eureka-client-one</module>
+        <module>eureka-server</module>
+        <module>admin-server</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.jolokia</groupId>

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.forezp</groupId>
-    <artifactId>chapter12</artifactId>
+    <artifactId>chapter12-2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -23,6 +23,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <modules>
+        <module>eureka-server</module>
+        <module>admin-server</module>
+        <module>eureka-client-one</module>
+        <module>eureka-client-two</module>
+        <module>turbine-service</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.jolokia</groupId>
