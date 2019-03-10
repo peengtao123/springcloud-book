@@ -14,12 +14,13 @@
         <module>config-server</module>
         <module>eureka-server</module>
         <module>gateway-service</module>
-        <module>user-service</module>
         <module>monitor-service</module>
         <module>uaa-service</module>
-        <module>blog-service</module>
         <module>common</module>
         <module>admin-service</module>
+        <module>log-service</module>
+        <module>user-service</module>
+        <module>zipkin-service</module>
     </modules>
 
     <parent>
