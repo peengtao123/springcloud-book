@@ -27,7 +27,6 @@
         <module>eureka-client-one</module>
         <module>eureka-server</module>
         <module>admin-server</module>
-        
     </modules>
     <dependencies>
         <dependency>

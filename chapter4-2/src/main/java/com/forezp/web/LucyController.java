@@ -11,21 +11,23 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by fangzhipeng on 2017/4/18.
  */
 @RestController
-@EnableConfigurationProperties({ConfigBean.class,User.class})
+@EnableConfigurationProperties({ConfigBean.class, User.class})
 public class LucyController {
+
     @Autowired
     ConfigBean configBean;
 
     @RequestMapping(value = "/lucy")
-    public String lucy(){
-        return configBean.getGreeting()+" >>>>"+configBean.getName()+" >>>>"+ configBean.getUuid()+" >>>>"+configBean.getMax();
+    public String lucy() {
+        return configBean.getGreeting() + " >>>>" + configBean.getName() + " >>>>" + configBean.getUuid() + " >>>>" + configBean.getMax();
     }
 
     @Autowired
     User user;
+
     @RequestMapping(value = "/user")
-    public String user(){
-        return user.getName()+user.getAge();
+    public String user() {
+        return user.getName() + user.getAge();
     }
 
 }

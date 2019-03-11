@@ -16,8 +16,8 @@ public class MiyaController {
     private int age;
 
     @RequestMapping(value = "/miya")
-    public String miya(){
-        return name+":"+age;
+    public String miya() {
+        return name + ":" + age;
     }
 
 }

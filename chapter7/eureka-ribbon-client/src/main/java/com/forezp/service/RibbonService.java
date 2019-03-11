@@ -14,6 +14,6 @@ public class RibbonService {
     RestTemplate restTemplate;
 
     public String hi(String name) {
-        return restTemplate.getForObject("http://eureka-client/hi?name="+name,String.class);
+        return restTemplate.getForObject("http://eureka-client/hi?name=" + name, String.class);
     }
 }

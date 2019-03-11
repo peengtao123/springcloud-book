@@ -2,14 +2,11 @@ package com.forezp.web;
 
 import com.forezp.entity.User;
 import com.forezp.service.UserService;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -29,8 +26,7 @@ public class UserController {
         return users;
     }
 
-    @ApiOperation(value = "创建用户", notes = "创建用户")
-
+    @ApiOperation(value = "创建用户", notes = "创建用户--")
     @RequestMapping(value = "", method = RequestMethod.POST)
     public User postUser(@RequestBody User user) {
         return userService.saveUser(user);

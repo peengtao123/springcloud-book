@@ -18,8 +18,9 @@ public class RibbonController {
 
     @Autowired
     RibbonService ribbonService;
+
     @GetMapping("/hi")
-    public String hi(@RequestParam(required = false,defaultValue = "forezp") String name){
+    public String hi(@RequestParam(required = false, defaultValue = "forezp") String name) {
         return ribbonService.hi(name);
     }
 
@@ -27,9 +28,9 @@ public class RibbonController {
     private LoadBalancerClient loadBalancer;
 
     @GetMapping("/testRibbon")
-    public String  testRibbon() {
+    public String testRibbon() {
         ServiceInstance instance = loadBalancer.choose("eureka-client");
-      //  URI uri = URI.create(String.format("http://%s:%s", instance.getHost(), instance.getPort()));
-        return instance.getHost()+":"+instance.getPort();
+        //  URI uri = URI.create(String.format("http://%s:%s", instance.getHost(), instance.getPort()));
+        return instance.getHost() + ":" + instance.getPort();
     }
 }

@@ -13,14 +13,11 @@
 
 
 
-	<!--<modules>-->
-		<!--<module>account-service</module>-->
-		<!--<module>config-server</module>-->
-		<!--<module>eureka-server</module>-->
-		<!--<module>gateway-service</module>-->
-		<!--<module>user-service</module>-->
-		<!--<module>monitor-service</module>-->
-	<!--</modules>-->
+	<modules>
+		<module>service-consumer</module>
+                <module>service-provider</module>
+                <module>zipkin-service</module>
+	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

@@ -1,6 +1,5 @@
 package com.forezp.web;
 
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +15,6 @@ public class HelloController {
     public String index() {
         return "Greetings from Spring Boot!";
     }
-
 
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {

@@ -12,8 +12,8 @@ import org.springframework.web.client.RestTemplate;
 public class RestTestController {
 
     @GetMapping("/testRest")
-    public String testRest(){
-        RestTemplate restTemplate=new RestTemplate();
-        return restTemplate.getForObject("https://www.baidu.com/",String.class);
+    public String testRest() {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject("https://www.baidu.com/", String.class);
     }
 }

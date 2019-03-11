@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by fangzhipeng on 2017/6/21.
  */
-@FeignClient(value = "eureka-client",configuration = FeignConfig.class)
+@FeignClient(value = "eureka-client", configuration = FeignConfig.class)
 public interface EurekaClientFeign {
+
     @GetMapping(value = "/hi")
     String sayHiFromClientEureka(@RequestParam(value = "name") String name);
 }
